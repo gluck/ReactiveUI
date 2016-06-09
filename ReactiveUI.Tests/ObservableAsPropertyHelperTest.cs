@@ -13,6 +13,29 @@ namespace ReactiveUI.Tests
 {
     public class ObservableAsPropertyHelperTest
     {
+        internal class OAPHTestFixture : ReactiveObject
+        {
+            private string _text;
+
+            public string Text
+            {
+                get { return _text; }
+                set { this.RaiseAndSetIfChanged(ref _text, value); }
+            }
+
+            public string this[string propertyName]
+            {
+                get { return string.Empty; }
+            }
+
+            public OAPHTestFixture()
+            {
+                var temp = this.WhenAnyValue(f => f.Text)
+                       .ToProperty(this, f => f["Whatever"])
+                       .Value;
+            }
+        }
+
         [Fact]
         public void OAPHShouldFireChangeNotifications()
         {
@@ -130,6 +153,22 @@ namespace ReactiveUI.Tests
             Assert.Equal(2, resultChanged.Count);
             Assert.Equal("Foo", resultChanging[1].Value);
             Assert.Equal("Baz", resultChanged[1].Value);
+        }
+
+        [Fact]
+        public void ToProperty_GivenIndexer_NotifiesOnExpectedPropertyName()
+        {
+            (new TestScheduler()).With(sched => {
+                var fixture = new OAPHTestFixture();
+                var propertiesChanged = new List<string>();
+                fixture.PropertyChanged += (sender, args) => {
+                    propertiesChanged.Add(args.PropertyName);
+                };
+
+                fixture.Text = "awesome";
+
+                Assert.Equal(new[] { "Text", "Item[]" }, propertiesChanged);
+            });
         }
     }
 }
