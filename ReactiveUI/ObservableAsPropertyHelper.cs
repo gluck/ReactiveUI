@@ -154,8 +154,11 @@ namespace ReactiveUI
             }
 
             var name = expression.GetMemberInfo().Name;
-            var ret = new ObservableAsPropertyHelper<TRet>(observable, 
-                _ => This.raisePropertyChanged(name), 
+            if (expression is IndexExpression)
+                name += "[]";
+
+            var ret = new ObservableAsPropertyHelper<TRet>(observable,
+                _ => This.raisePropertyChanged(name),
                 _ => This.raisePropertyChanging(name),
                 initialValue, scheduler);
 
@@ -190,7 +193,7 @@ namespace ReactiveUI
         /// <summary>
         /// Converts an Observable to an ObservableAsPropertyHelper and
         /// automatically provides the onChanged method to raise the property
-        /// changed notification.         
+        /// changed notification.
         /// </summary>
         /// <param name="source">The ReactiveObject that has the property</param>
         /// <param name="property">An Expression representing the property (i.e.
