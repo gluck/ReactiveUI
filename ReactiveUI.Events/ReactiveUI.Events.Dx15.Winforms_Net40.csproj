@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3978D576-53D3-40BB-84DF-60AC2DDC1EBE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReactiveUI.Events.DevExpress.WinForms</RootNamespace>
+    <AssemblyName>ReactiveUI.Events.DevExpress.15.1.4.WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\Net40\</OutputPath>
+    <IntermediateOutputPath>obj\Debug\Net40</IntermediateOutputPath>
+    <DefineConstants>TRACE;DEBUG;NET_40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\Net40\</OutputPath>
+    <IntermediateOutputPath>obj\Release\Net40</IntermediateOutputPath>
+    <DefineConstants>TRACE;NET_40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.BonusSkins.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.Designer.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Charts.Designer.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Charts.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeConverter.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.CodeConverter.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.CodeParser.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Data.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.DataAccess.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.1.UI, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.DataAccess.v15.1.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DemoData.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.DemoData.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DemoData.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.DemoData.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Images.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Map.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Map.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Mvvm.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Office.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Pdf.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v15.1.Drawing, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Pdf.v15.1.Drawing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.PivotGrid.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Printing.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.RichEdit.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Snap.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Snap.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v15.1.Extensions, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Snap.v15.1.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Sparkline.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.SpellChecker.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Spreadsheet.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Utils.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1.UI, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.Utils.v15.1.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraBars.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraCharts.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1.Extensions, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraCharts.v15.1.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1.UI, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraCharts.v15.1.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1.Web, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraCharts.v15.1.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1.Wizard, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraCharts.v15.1.Wizard.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraEditors.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraGauges.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.1.Presets, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraGauges.v15.1.Presets.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.1.Win, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraGauges.v15.1.Win.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraGrid.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraLayout.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraMap.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraNavBar.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraPdfViewer.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraPivotGrid.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraPrinting.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraReports.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.1.Extensions, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraReports.v15.1.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.1.Service, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraReports.v15.1.Service.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.1.Web, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraReports.v15.1.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraRichEdit.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.1.Extensions, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraRichEdit.v15.1.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraScheduler.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraScheduler.v15.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v15.1.Extensions, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraScheduler.v15.1.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v15.1.Reporting, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraScheduler.v15.1.Reporting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v15.1.Reporting.Extensions, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraScheduler.v15.1.Reporting.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraSpellChecker.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraSpreadsheet.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraTreeList.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraVerticalGrid.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.4.Winforms.15.1.4.0\lib\net40\DevExpress.XtraWizard.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ReactiveUI.Events.Winforms, Version=6.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\reactiveui-events-winforms.6.5.0.2\lib\net40\ReactiveUI.Events.Winforms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Reactive.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\net40\System.Reactive.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\net40\System.Reactive.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Linq, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\net40\System.Reactive.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\net40\System.Reactive.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Events.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.ReactiveUI.Events.Dx15.Winforms_Net40.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>%25SystemRoot%25\Microsoft.NET\Framework\v4.0.30319\msbuild.exe /p:Configuration=Release "$(ProjectDir)EventBuilder.csproj"
+        "$(ProjectDir)EventBuilder.exe" "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" "$(ProjectDir)..\packages\DevExpress.15.1.Winforms.15.1.4.1\lib\net40\DevExpress.*.dll" "$(ProjectDir)Events.mustache" &gt; "$(ProjectDir)Events.cs"
+del "$(ProjectDir)EventBuilder.exe"
+del "$(ProjectDir)EventBuilder.pdb"
+del "$(ProjectDir)Nustache.Core.dll"
+del "$(ProjectDir)Mono.Cecil.dll"
+del "$(ProjectDir)Mono.Cecil.pdb"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
