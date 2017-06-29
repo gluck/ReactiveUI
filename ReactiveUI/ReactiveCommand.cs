@@ -281,7 +281,7 @@ namespace ReactiveUI
     /// </summary>
     public class ReactiveCommand<T> : IReactiveCommand<T>, IReactiveCommand
     {
-#if NET_45
+#if NET_40
         public event EventHandler CanExecuteChanged;
 
         protected virtual void raiseCanExecuteChanged(EventArgs args)
