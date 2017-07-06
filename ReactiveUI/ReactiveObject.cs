@@ -24,7 +24,7 @@ namespace ReactiveUI
     [DataContract]
     public class ReactiveObject : IReactiveNotifyPropertyChanged<IReactiveObject>, IHandleObservableErrors, IReactiveObject
     {
-#if NET_45        
+#if NET_45 || NET_40
         public event PropertyChangingEventHandler PropertyChanging;
 
         void IReactiveObject.RaisePropertyChanging(PropertyChangingEventArgs args)
