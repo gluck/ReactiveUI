@@ -8,7 +8,7 @@
     <OutputType>library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReactiveUI.Events.DevExpress.Xpf</RootNamespace>
-    <AssemblyName>ReactiveUI.Events.DevExpress.15.1.4.Xpf</AssemblyName>
+    <AssemblyName>ReactiveUI.Events.DevExpress.15.1.7.12.Xpf</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,67 +35,67 @@
     <DefineConstants>TRACE;NET_40</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\Net40\ReactiveUI.Events.DevExpress.15.1.4.Xpf.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\Net40\ReactiveUI.Events.DevExpress.15.1.7.12.Xpf.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Data.v15.1.dll</HintPath>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Data.v15.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Mvvm.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Mvvm.v15.1.dll</HintPath>
+    <Reference Include="DevExpress.Mvvm.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Mvvm.v15.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Printing.v15.1.Core.dll</HintPath>
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Printing.v15.1.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Controls.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Xpf.Controls.v15.1.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.Controls.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Xpf.Controls.v15.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Core.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Xpf.Core.v15.1.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.Core.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Xpf.Core.v15.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Docking.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Xpf.Docking.v15.1.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.Docking.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Xpf.Docking.v15.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.DocumentViewer.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Xpf.DocumentViewer.v15.1.Core.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.DocumentViewer.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Xpf.DocumentViewer.v15.1.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Grid.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Xpf.Grid.v15.1.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.Grid.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Xpf.Grid.v15.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Grid.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Xpf.Grid.v15.1.Core.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.Grid.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Xpf.Grid.v15.1.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Layout.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Xpf.Layout.v15.1.Core.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.Layout.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Xpf.Layout.v15.1.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Printing.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Xpf.Printing.v15.1.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.Printing.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Xpf.Printing.v15.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Ribbon.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Xpf.Ribbon.v15.1.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.Ribbon.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Xpf.Ribbon.v15.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Themes.MetropolisDark.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Xpf.Themes.MetropolisDark.v15.1.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.Themes.MetropolisDark.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Xpf.Themes.MetropolisDark.v15.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Themes.MetropolisLight.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Xpf.Themes.MetropolisLight.v15.1.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.Themes.MetropolisLight.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Xpf.Themes.MetropolisLight.v15.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Themes.Office2007Silver.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.Xpf.Themes.Office2007Silver.v15.1.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.Themes.Office2007Silver.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=6935958ad4a06599, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.Xpf.Themes.Office2007Silver.v15.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="PresentationCore" />
@@ -153,7 +153,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>%25SystemRoot%25\Microsoft.NET\Framework\v4.0.30319\msbuild.exe /p:Configuration=Release "$(ProjectDir)EventBuilder.csproj"
-        "$(ProjectDir)EventBuilder.exe" "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" "$(ProjectDir)..\packages\DevExpress.15.1.4.Xpf.15.1.4.1\lib\net40\DevExpress.*.dll" "$(ProjectDir)Events.mustache" &gt; "$(ProjectDir)Events.cs"
+        "$(ProjectDir)EventBuilder.exe" "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" "$(ProjectDir)..\packages\DevExpress.15.1.Xpf.15.1.7.12\lib\net40\DevExpress.*.dll" "$(ProjectDir)Events.mustache" &gt; "$(ProjectDir)Events.cs"
 del "$(ProjectDir)EventBuilder.exe"
 del "$(ProjectDir)EventBuilder.pdb"
 del "$(ProjectDir)Nustache.Core.dll"

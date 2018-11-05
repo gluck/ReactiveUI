@@ -119,7 +119,19 @@ namespace EventBuilder
                         GenericArgs = GetGenericArgs(y.Type),
                         GenericConstraints = GetGenericConstraints(y.Type),
                         Type = y.Type,
-                        Events = y.Events.Select(z => new PublicEventInfo() {
+                        Events = y.Events
+                                  .Where(e => {
+                                             if (!(e.EventType is TypeDefinition)) {
+                                                 return true;
+                                             }
+
+                                             var invokeMethod =
+                                                 ((TypeDefinition) e.EventType)
+                                                 .Methods.FirstOrDefault(m => m.Name == "Invoke");
+                                             return invokeMethod == null ||
+                                                    invokeMethod.ReturnType?.FullName == "System.Void";
+                                         })
+                                         .Select(z => new PublicEventInfo() {
                             Name = z.Name,
                             EventHandlerType = GetRealTypeName(z.EventType),
                             EventArgsType = GetEventArgsTypeForEvent(z),
@@ -160,12 +172,16 @@ namespace EventBuilder
                 return "";
             return string.Join(" ", type.GenericParameters.Select(p =>
             {
-                if (!p.HasConstraints && !p.HasDefaultConstructorConstraint) return "";
+                if (!p.HasConstraints && !p.HasDefaultConstructorConstraint && !p.HasReferenceTypeConstraint)
+                    return "";
                 var constraints = p.Constraints.Select(t => {
                     var ret = t.FullName;
                     return ret == "System.ValueType" ? "struct" : ret;
                 }).ToList();
-                if (p.HasDefaultConstructorConstraint && !p.HasNotNullableValueTypeConstraint) constraints.Add("new()");
+                if (p.HasDefaultConstructorConstraint && !p.HasNotNullableValueTypeConstraint)
+                    constraints.Add("new()");
+                if (p.HasReferenceTypeConstraint)
+                    constraints.Add("class");
                 return " where " + p.Name + " : " + string.Join(", ", constraints);
             }));
         }
@@ -327,7 +343,8 @@ namespace EventBuilder
         public static string RenameBogusWinRTTypes(string typeName)
         {
             if (substitutionList.ContainsKey(typeName)) return substitutionList[typeName];
-            return typeName;
+            // NB: Inner types in Mono.Cecil get reported as 'Foo/Bar'
+            return typeName.Replace('/', '.');
         }
 
         public static string GetEventArgsTypeForEvent(EventDefinition ei)
