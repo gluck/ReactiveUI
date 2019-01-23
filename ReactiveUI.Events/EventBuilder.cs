@@ -128,9 +128,10 @@ namespace EventBuilder
                                              var invokeMethod =
                                                  ((TypeDefinition) e.EventType)
                                                  .Methods.FirstOrDefault(m => m.Name == "Invoke");
-                                             return invokeMethod == null ||
-                                                    invokeMethod.ReturnType?.FullName == "System.Void";
-                                         })
+
+                                              return invokeMethod == null || invokeMethod.ReturnType != null &&
+                                                     invokeMethod.ReturnType.FullName == "System.Void";
+                                        })
                                          .Select(z => new PublicEventInfo() {
                             Name = z.Name,
                             EventHandlerType = GetRealTypeName(z.EventType),
